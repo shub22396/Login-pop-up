@@ -46,7 +46,7 @@ public class TestNGTodo1 {
         caps.setCapability("build", "TestNG With Java");
         caps.setCapability("name", m.getName() + " - " + this.getClass().getName());
         caps.setCapability("plugin", "git-testng");
-        caps.setCapability("tunnel",true);
+       // caps.setCapability("tunnel",true);
 
 
         String[] Tags = new String[] { "Feature", "Falcon", "Severe" };
@@ -60,6 +60,10 @@ public class TestNGTodo1 {
     public void basicTest() throws InterruptedException, AWTException {
 
 
+        
+        
+        
+          driver.get("https://the-internet.herokuapp.com/basic_auth");
 
 //        Alert alert = driver.switchTo().alert();
 //        UserAndPassword UP = new UserAndPassword("userName","Password")
@@ -70,6 +74,8 @@ public class TestNGTodo1 {
 
 
 
+        
+        
 //
 //
       //  Thread.sleep(13000);
@@ -97,20 +103,20 @@ public class TestNGTodo1 {
 
 
 
-        driver.get("https://spcfn-care-qa.npe.usis.us-use1.gcp.efx/activiti-app/workspace/?code=Du-DVXE_wMry5JZmy-7Qp93vNXWKmdH9FM8AAABq&state=32934eaeb411c9218ab2a83e04c1698a73uVH3InS#/apps");
+//         driver.get("https://spcfn-care-qa.npe.usis.us-use1.gcp.efx/activiti-app/workspace/?code=Du-DVXE_wMry5JZmy-7Qp93vNXWKmdH9FM8AAABq&state=32934eaeb411c9218ab2a83e04c1698a73uVH3InS#/apps");
 
 
-        Thread.sleep(20000);
+//         Thread.sleep(20000);
 
-        driver.findElement(By.id("username")).sendKeys("sfp_care_ui");
+//         driver.findElement(By.id("username")).sendKeys("sfp_care_ui");
 
-        Thread.sleep(1000);
+//         Thread.sleep(1000);
 
-        driver.findElement(By.id("password")).sendKeys("Wn2#WAjEcY4\\R4?GW$di?TLMjpC,R5");
+//         driver.findElement(By.id("password")).sendKeys("Wn2#WAjEcY4\\R4?GW$di?TLMjpC,R5");
 
-        driver.findElement(By.id("signOnButton")).click();
+//         driver.findElement(By.id("signOnButton")).click();
         
-        System.setProperty("java.awt.headless", "false");
+//         System.setProperty("java.awt.headless", "false");
 
         Thread.sleep(30000);
 
