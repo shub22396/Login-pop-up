@@ -109,6 +109,8 @@ public class TestNGTodo1 {
         driver.findElement(By.id("password")).sendKeys("Wn2#WAjEcY4\\R4?GW$di?TLMjpC,R5");
 
         driver.findElement(By.id("signOnButton")).click();
+        
+        System.setProperty("java.awt.headless", "false");
 
         Thread.sleep(30000);
 
