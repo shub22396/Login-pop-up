@@ -116,7 +116,7 @@ public class TestNGTodo1 {
 
 //         driver.findElement(By.id("signOnButton")).click();
         
-        System.setProperty("java.awt.headless", "false");
+        System.setProperty("java.awt.headless", "true");
 
         Thread.sleep(30000);
 
